@@ -5,7 +5,7 @@ gcc 8.3.1
 ###########目录结构描述###########  
 .  
 ├── ReadMe.md                  //说明文档  
-├── abc-master (2).zip         //ABC源代码  
+├── abc-master.zip             //ABC源代码  
 ├── kissat                     //SAT求解器的可执行文件  
 ├── kissat_sat+cf.zip          //SAT求解器的源代码  
 ├── lec_kissat+cf              //逻辑等价性验证的可执行文件  
@@ -39,13 +39,11 @@ kissat是编译好的code二进制文件，作用是使用了改进的增加了�
 `chmod +x configure`  
 `./configure`  
 `chmod +x scripts/generate-build-header.sh`  
+`make`  
 `cp build/kissat ..`  
 `cd ..`  
 逻辑等价性验证的源代码编译（需要用到libabc.a):  
 `gcc -Wall -g -c lec_kissat+cf.c -o lec.o`  
 `g++ -g -o lec_kissat+cf lec.o libabc.a -lm -ldl -lreadline -lpthread`  
 `chmod +x lec_kissat+cf`  
-
-
-
 
