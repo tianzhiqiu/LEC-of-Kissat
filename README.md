@@ -45,3 +45,4 @@ cd ..
 gcc -Wall -g -c lec_kissat+cf.c -o lec.o
 g++ -g -o lec_kissat+cf lec.o libabc.a -lm -ldl -lreadline -lpthread
 chmod +x lec_kissat+cf
+
